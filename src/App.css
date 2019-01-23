@@ -9,25 +9,28 @@
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 80px);
-  grid-template-rows: 30px 30px repeat(5, 70px);
+  grid-template-columns: repeat(4, minmax(60px,80px));
+  grid-template-rows: 20px 30px 30px repeat(5, 70px);
   grid-gap: 5px;
   border-radius: 5px;
   background: #005a5b;
   padding: 10px;
+  padding-top: 5px;
+  
 }
 #formula {
   grid-column: 1 / span 4;
-  grid-row: 1 / span 2;
+  grid-row: 2 / span 2;
   text-align: right;
   border-radius: 5px;
   background: #02a676;
   padding-right: 5px;
+  padding-top: 5px;
   font-weight: bold;
   overflow: auto;
 }
 #display {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1 / span 4;
   text-align: right;
   padding-right: 6px;
@@ -40,14 +43,34 @@
 #zero {
   grid-column: span 2;
 }
+#divide, #multiply, #subtract{
+  font-size: 24px;
+}
 .btn{
+  font-family: 'Montserrat', sans-serif;
   background: #005a5b ;
   color: #02a676;
   font-size: 22px;
   font-weight: bold;
   border: 1px solid #008c72;
+  border-radius: 5px;
 }
 .btn:active{
   background: #008c72;
   padding-right: 0; 
+}
+.about{
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  font-size: 10px;
+  font-weight: bold;
+  color: #02a676;
+  text-align: center;
+}
+.about a{
+  text-decoration: none;
+  color: #02a676;
+}
+.about a:hover{
+  text-decoration: underline;
 }
