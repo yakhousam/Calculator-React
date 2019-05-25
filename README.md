@@ -1,5 +1,5 @@
-#Demo
-you can use your keyboard to input numbers
+# Demo
+you can use your keyboard <br>
 Link to the demo app: https://yakhousam.github.io/Calculator-React
 
 
