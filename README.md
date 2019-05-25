@@ -1,3 +1,8 @@
+#Demo
+you can use your keyboard to input numbers
+Link to the demo app: https://yakhousam.github.io/Calculator-React
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
